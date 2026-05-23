@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* MAIN */
+.home{
+  width: 100%;
+  background: #fff;
+}
+
+/* HERO SECTION */
+.hero{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* LEFT SIDE */
+.hero-left{
+  width: 55%;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  position: relative;
+}
+
+/* ANGLE SHAPE */
+.hero-left::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 250px;
+  height: 100%;
+  background: #d9d9d9;
+  transform: skewX(-10deg);
+  z-index: 1;
+}
+
+/* TEXT CONTENT */
+.hero-content{
+  position: relative;
+  z-index: 2;
+}
+
+.small-text{
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.big-text{
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.role{
+  font-size: 18px;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* SOCIAL ICONS */
+.social-icons{
+  display: flex;
+  gap: 18px;
+}
+
+.social-box{
+  width: 52px;
+  height: 52px;
+  background: #cfcfcf;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #111;
+  font-size: 22px;
+
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+
+  transition: 0.3s ease;
+}
+
+.social-box:hover{
+  background: #111;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* RIGHT SIDE */
+.hero-right{
+  width: 45%;
+  background: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE */
+.hero-image{
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image img{
+  height: 90vh;
+  object-fit: contain;
+}
+
+/* DESCRIPTION */
+.description-section{
+  width: 100%;
+  background: #111;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BIG WATERMARK */
+.description-section::after{
+  content: "IT";
+  position: absolute;
+  right: 20px;
+  bottom: -80px;
+
+  font-size: 260px;
+  font-weight: 900;
+
+  color: transparent;
+  -webkit-text-stroke: 5px rgba(255,255,255,0.08);
+
+  transform: rotate(-20deg);
+}
+
+.description-container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* TITLE */
+.it-berries-title{
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+/* TEXT */
+.description-text{
+  max-width: 850px;
+}
+
+.description-text p{
+  font-size: 15px;
+  line-height: 2;
+  color: #d0d0d0;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* BUTTON */
+.read-more{
+  display: inline-block;
+  margin-top: 20px;
+
+  padding: 14px 30px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: #fff;
+
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.read-more:hover{
+  background: rgba(255,255,255,0.08);
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+
+  .hero{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right{
+    width: 100%;
+  }
+
+  .hero-left{
+    min-height: 70vh;
+    padding: 120px 40px 80px;
+  }
+
+  .hero-left::after{
+    display: none;
+  }
+
+  .hero-right{
+    min-height: 60vh;
+  }
+
+  .big-text{
+    font-size: 48px;
+  }
+
+  .hero-image img{
+    height: 65vh;
+  }
+}
+
+@media(max-width: 768px){
+
+  .small-text{
+    font-size: 22px;
+  }
+
+  .big-text{
+    font-size: 38px;
+  }
+
+  .role{
+    font-size: 15px;
+  }
+
+  .social-box{
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .description-container{
+    padding: 0 25px;
+  }
+
+  .description-section::after{
+    font-size: 160px;
+  }
+
+  .it-berries-title{
+    font-size: 20px;
+  }
+
+  .description-text p{
+    font-size: 14px;
+    text-align: left;
+  }
+}

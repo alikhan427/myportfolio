@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN SECTION */
+.about-section{
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 80px;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITLE */
+.about-heading{
+  border: 5px solid #000;
+  padding: 18px 70px;
+  margin-bottom: 60px;
+}
+
+.about-heading h1{
+  font-size: 28px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* DESCRIPTION */
+.about-text{
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about-text p{
+  font-size: 14px;
+  line-height: 2;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* EXPLORE BUTTON */
+.explore-wrapper{
+  margin-bottom: 80px;
+}
+
+.explore-btn{
+  background: transparent;
+  border: none;
+  color: #111;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 12px 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.explore-btn::before,
+.explore-btn::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 28px;
+  background: #111;
+  transform: translateY(-50%);
+}
+
+.explore-btn::before{
+  left: 0;
+}
+
+.explore-btn::after{
+  right: 0;
+}
+
+/* DIVIDER */
+.divider{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 90px;
+}
+
+.divider span{
+  width: 70px;
+  height: 2px;
+  background: #222;
+}
+
+.divider p{
+  font-size: 18px;
+  color: #111;
+}
+
+/* SERVICES */
+.services-container{
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px 100px;
+  margin-bottom: 100px;
+}
+
+.service-box{
+  position: relative;
+}
+
+.service-icon{
+  position: absolute;
+  left: -35px;
+  top: -5px;
+  font-size: 34px;
+  color: #e0e0e0;
+}
+
+.service-box h3{
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.service-box p{
+  font-size: 13px;
+  line-height: 1.9;
+  color: #666;
+  max-width: 350px;
+}
+
+/* CENTER LAST CARD */
+.service-box:last-child{
+  grid-column: 1 / span 2;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+  .about-section{
+    padding: 80px 25px;
+  }
+
+  .about-heading{
+    padding: 15px 40px;
+  }
+
+  .about-heading h1{
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+
+  .services-container{
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .service-box:last-child{
+    grid-column: auto;
+  }
+
+  .service-box{
+    text-align: center;
+  }
+
+  .service-icon{
+    position: static;
+    margin-bottom: 15px;
+  }
+
+  .service-box p{
+    max-width: 100%;
+  }
+
+  .divider{
+    margin-bottom: 60px;
+  }
+}
