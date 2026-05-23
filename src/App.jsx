@@ -1,6 +1,6 @@
 import React from 'react';
 import AppRouting from './routing/AppRouting';
-import Footer from './component/footer/Footer';
+import Footer from '../src/component/footer/footer';
 
 const App = () => {
   return (
