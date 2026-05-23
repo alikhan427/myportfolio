@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Navbar from "../../component/navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
 import { FaPencilRuler, FaCode, FaTools } from "react-icons/fa";
 
 const About = () => {

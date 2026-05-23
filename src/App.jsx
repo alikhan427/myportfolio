@@ -1,6 +1,7 @@
 import React from 'react';
-import AppRouting from './routing/AppRouting.jsx';  
-import Footer from './component/footer/Footer.jsx'; 
+import AppRouting from './routing/AppRouting';
+import Footer from './components/footer/Footer';
+
 const App = () => {
   return (
     <div className="app">

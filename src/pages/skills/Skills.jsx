@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import Navbar from '../../component/navbar/Navbar';
+import Navbar from '../../components/navbar/Navbar';
 
 const Skills = () => {
   return (

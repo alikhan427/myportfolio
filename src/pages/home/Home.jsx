@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 
-import Navbar from '../../component/navbar/Navbar';
+import Navbar from '../../components/navbar/Navbar';
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiFiverr, SiUpwork } from 'react-icons/si';
