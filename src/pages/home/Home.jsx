@@ -33,11 +33,11 @@ const Home = () => {
             {/* SOCIAL ICONS */}
             <div className="social-icons">
 
-              <a href="#" className="social-box">
+              <a href="https://github.com/alikhan427" className="social-box">
                 <FaGithub />
               </a>
 
-              <a href="#" className="social-box">
+              <a href="https://www.linkedin.com/in/ali-khan-927162415/" className="social-box">
                 <FaLinkedin />
               </a>
 
