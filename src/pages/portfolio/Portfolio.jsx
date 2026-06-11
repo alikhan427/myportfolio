@@ -21,7 +21,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "E-Commerce Dashboard",
-      link: "https://dashboarda1.netlify.app/",
+      link: "https://e-dashboardai.netlify.app/#/dashboard",
       images: [d1img1, d1img2, d1img3],
     },
 
