@@ -4,18 +4,18 @@ import Navbar from "../../components/navbar/Navbar";
 
 // Dashboard 1 Images
 import d1img1 from "../../assets/Dashboard1/img1.png";
-import d1img2 from "../../assets/dashboard1/img2.png";
-import d1img3 from "../../assets/dashboard1/img3.png";
+import d1img2 from "../../assets/Dashboard1/img2.png";
+import d1img3 from "../../assets/Dashboard1/img3.png";
 
 // Dashboard 2 Images
-import d2img1 from "../../assets/dashboard2/img1.png";
-import d2img2 from "../../assets/dashboard2/img2.png";
-import d2img3 from "../../assets/dashboard2/img3.png";
+import d2img1 from "../../assets/Dashboard2/img1.png";
+import d2img2 from "../../assets/Dashboard2/img2.png";
+import d2img3 from "../../assets/Dashboard2/img3.png";
 
 // Dashboard 3 Images
-import d3img1 from "../../assets/dashboard3/img1.png";
-import d3img2 from "../../assets/dashboard3/img2.png";
-import d3img3 from "../../assets/dashboard3/img3.png";
+import d3img1 from "../../assets/Dashboard3/img1.png";
+import d3img2 from "../../assets/Dashboard3/img2.png";
+import d3img3 from "../../assets/Dashboard3/img3.png";
 
 const Portfolio = () => {
   const projects = [
